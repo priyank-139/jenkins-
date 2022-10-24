@@ -1,0 +1,6 @@
+---
+# tasks file for hashi_corp_vault
+
+  - name: install jenkins tool 
+    include_tasks: jenkins_debian.yml
+

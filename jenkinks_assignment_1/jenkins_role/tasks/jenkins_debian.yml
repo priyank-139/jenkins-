@@ -1,0 +1,32 @@
+---
+   
+
+    - name: Install Java using Ansible
+      apt:
+        name: openjdk-11-jdk
+        state: present
+
+    - name: Update APT package manager repositories cache
+      apt:
+       update_cache: yes
+      
+     
+
+    - name: ensure the jenkins apt repository key is installed
+      apt_key: url=https://pkg.jenkins.io/debian-stable/jenkins.io.key state=present
+      
+
+    - name: ensure the repository is configured
+      apt_repository: repo='deb https://pkg.jenkins.io/debian-stable binary/' state=present
+      
+
+    - name: Install jenkins
+      apt:
+        name: jenkins
+        state: present
+
+    
+      
+
+      
+

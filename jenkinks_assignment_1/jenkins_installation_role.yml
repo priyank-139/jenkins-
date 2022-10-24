@@ -1,0 +1,8 @@
+---
+
+- hosts: ex-1
+  gather_facts: false
+  become: true
+  roles:
+  
+    - role: jenkins_role
