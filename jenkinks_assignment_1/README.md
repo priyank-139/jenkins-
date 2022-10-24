@@ -54,5 +54,5 @@ ansible-playbook jenkins_installation_role.yml
 
 ## Output of the plabook after deploying the jenkins service on the remote server
 
-<img src=./snapshot/1.1.png>
+<img src=./snaps/1.png>
 
